@@ -32,7 +32,7 @@ export function useSiteData() {
         raw = raw.replace(/3\.34/g, "3.37");
 
         // Path prefixing for GitHub Pages subpath
-        const prefix = "/websitegithub";
+        const prefix = "/EnisTalhaSunetci";
         let rawWithPrefix = raw;
         if (!raw.includes(prefix + "/photos/")) {
           rawWithPrefix = rawWithPrefix.replace(/"\/photos\//g, `"${prefix}/photos/`);
