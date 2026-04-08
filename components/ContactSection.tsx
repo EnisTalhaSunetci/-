@@ -4,7 +4,9 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { useSiteData } from "@/lib/siteData";
 
-const getSocialLinks = (d: any) => [
+import type { SiteData } from "@/lib/defaultData";
+
+const getSocialLinks = (d: SiteData) => [
   {
     label: "Email",
     value: d.contact.email,
