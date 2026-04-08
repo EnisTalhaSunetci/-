@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useSiteData, slugify } from "@/lib/siteData";
-import { DEFAULT_SITE_DATA } from "@/lib/defaultData";
 import type { SiteData, ExperienceItem, EventItem, ProjectDetail } from "@/lib/defaultData";
 
 const ADMIN_PASSWORD = "enis2025";
