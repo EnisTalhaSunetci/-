@@ -6,17 +6,22 @@ import Image from "next/image";
 import Link from "next/link";
 import { useSiteData, EventItem } from "@/lib/siteData";
 
-const CATEGORY_COLORS: Record<string, string> = {
-  Zirve: "bg-purple-500/10 text-purple-400 border-purple-500/20",
-  Etkinlik: "bg-blue-500/10 text-blue-400 border-blue-500/20",
-  Diplomasi: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-  Yarışma: "bg-orange-500/10 text-orange-400 border-orange-500/20",
-  Gönüllülük: "bg-pink-500/10 text-pink-400 border-pink-500/20",
-  Fuar: "bg-yellow-500/10 text-yellow-400 border-yellow-500/20",
-  Proje: "bg-violet-500/10 text-violet-400 border-violet-500/20",
-  Eğitim: "bg-indigo-500/10 text-indigo-400 border-indigo-500/20",
-  Araştırma: "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-};
+// Custom component for Dynamic Category Badge
+function CategoryBadge({ category, colors }: { category: string; colors: Record<string, string> }) {
+  const color = colors?.[category] || "#7C3AED";
+  return (
+    <span 
+      className="absolute top-5 right-5 text-[9px] font-black px-3 py-1.5 rounded-xl border uppercase tracking-widest backdrop-blur-md"
+      style={{ 
+        backgroundColor: `${color}15`, 
+        color: color, 
+        borderColor: `${color}30` 
+      }}
+    >
+      {category}
+    </span>
+  );
+}
 
 export default function EventsGallery() {
   const ref = useRef<HTMLDivElement>(null);
@@ -76,7 +81,6 @@ export default function EventsGallery() {
         {/* Gallery grid */}
         <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredEvents.map((event: EventItem, i: number) => {
-            const catStyle = CATEGORY_COLORS[event.category] ?? "bg-slate-500/10 text-slate-400 border-slate-500/20";
             return (
               <motion.div
                 key={event.title}
@@ -101,9 +105,7 @@ export default function EventsGallery() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90" />
 
                     {/* Category badge */}
-                    <span className={`absolute top-5 right-5 text-[9px] font-black px-3 py-1.5 rounded-xl border uppercase tracking-widest ${catStyle} backdrop-blur-md`}>
-                      {event.category}
-                    </span>
+                    <CategoryBadge category={event.category} colors={d.categoryColors} />
 
                     {/* Year */}
                     <span className="absolute top-5 left-5 text-[9px] text-white/80 font-black bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-xl uppercase tracking-widest border border-white/10">

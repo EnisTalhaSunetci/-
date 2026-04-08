@@ -6,14 +6,22 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { useSiteData } from "@/lib/siteData";
 
-const CATEGORY_COLORS: Record<string, string> = {
-  Zirve: "bg-purple-500/10 text-purple-400 border-purple-500/20",
-  Etkinlik: "bg-blue-500/10 text-blue-400 border-blue-500/20",
-  Yarışma: "bg-orange-500/10 text-orange-400 border-orange-500/20",
-  Diplomasi: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-  Gönüllülük: "bg-pink-500/10 text-pink-400 border-pink-500/20",
-  Medya: "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-};
+// Custom component for Dynamic Category Badge
+function CategoryBadge({ category, colors }: { category: string; colors: Record<string, string> }) {
+  const color = colors?.[category] || "#7C3AED";
+  return (
+    <span 
+      className="absolute top-5 right-5 text-[10px] font-black px-3.5 py-1.5 rounded-xl border-2 uppercase tracking-widest backdrop-blur-md"
+      style={{ 
+        backgroundColor: `${color}15`, 
+        color: color, 
+        borderColor: `${color}30` 
+      }}
+    >
+      {category}
+    </span>
+  );
+}
 
 export default function ProjectsShowcase() {
   const ref = useRef<HTMLDivElement>(null);
@@ -62,7 +70,6 @@ export default function ProjectsShowcase() {
         {/* Projects grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {FEATURED_PROJECTS.map((project, i) => {
-            const catStyle = CATEGORY_COLORS[project.category] ?? "bg-slate-500/10 text-slate-400 border-slate-500/20";
             return (
               <motion.div
                 key={project.slug}
@@ -85,9 +92,7 @@ export default function ProjectsShowcase() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
                     {/* Category badge */}
-                    <span className={`absolute top-5 right-5 text-[10px] font-black px-3.5 py-1.5 rounded-xl border-2 uppercase tracking-widest ${catStyle} backdrop-blur-md`}>
-                      {project.category}
-                    </span>
+                    <CategoryBadge category={project.category} colors={data.categoryColors} />
 
                     {/* Period */}
                     <span className="absolute top-5 left-5 text-[10px] text-white font-black bg-black/40 backdrop-blur-md px-3.5 py-1.5 rounded-xl uppercase tracking-widest border border-white/10">

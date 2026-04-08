@@ -41,6 +41,12 @@ export interface SiteData {
     location: string;
     address: string;
   };
+  seo: {
+    homepage: { title: string; description: string; keywords: string };
+    projects: { title: string; description: string; keywords: string };
+    events: { title: string; description: string; keywords: string };
+  };
+  categoryColors: { [key: string]: string };
   events: EventItem[];
   projects: ProjectDetail[];
 }
@@ -425,6 +431,37 @@ export const DEFAULT_SITE_DATA: SiteData = {
     "github": "",
     "location": "Kocaeli / İstanbul, Türkiye",
     "address": "Altayeşme Mah. Birsen Sok. no:17/19 daire:12 Maltepe/İstanbul"
+  },
+  "seo": {
+    "homepage": {
+      "title": "Enis Talha Sünetci | AI Proje Koordinatörü & İHA Uzmanı",
+      "description": "Enis Talha Sünetci'nin kişisel portfolyosu. Havacılık, savunma sanayii ve yapay zeka alanındaki projeler, deneyimler ve etkinlikler.",
+      "keywords": "Enis Talha Sünetci, Havacılık, İHA, Yapay Zeka, GTÜ, Proje Koordinatörü"
+    },
+    "projects": {
+      "title": "Projelerimiz | Enis Talha Sünetci",
+      "description": "Savunma sanayinden teknolojiye, en önemli projelerimiz ve başarılarımız.",
+      "keywords": "Projeler, TEKNOFEST, İHA, Ar-Ge"
+    },
+    "events": {
+      "title": "Etkinlikler & Paylaşımlar | Enis Talha Sünetci",
+      "description": "Katıldığımız zirveler, fuarlar ve sektörel etkileşimler.",
+      "keywords": "Etkinlikler, Fuar, Zirve, Diplomasi"
+    }
+  },
+  "categoryColors": {
+    "Diplomasi": "#3b82f6",
+    "Ziyaret": "#ef4444",
+    "Zirve": "#10b981",
+    "Etkinlik": "#a855f7",
+    "Yarışma": "#f59e0b",
+    "Fuar": "#06b6d4",
+    "Gönüllülük": "#ec4899",
+    "İş Deneyimi": "#6366f1",
+    "Proje": "#8b5cf6",
+    "Eğitim": "#22c55e",
+    "Zirve Genel Koordinatörü": "#3b82f6",
+    "Diplomasi & Teknoloji": "#f43f5e"
   },
   "events": [
     {

@@ -74,6 +74,8 @@ export default function AdminPage() {
     { key: "events", label: "Etkinlikler" },
     { key: "projects", label: "Projeler" },
     { key: "contact", label: "İletişim" },
+    { key: "seo", label: "SEO Ayarları" },
+    { key: "colors", label: "Kategori Renkleri" },
     { key: "export", label: "Dışa Aktar" },
   ];
 
@@ -116,9 +118,11 @@ export default function AdminPage() {
             {activeTab === "experiences" && <ExperiencesEditor data={data} onSave={(v) => handleSave("Deneyimler", { experiences: v })} />}
             {activeTab === "skills" && <SkillsEditor data={data} onSave={(v) => handleSave("Yetenekler", { skills: v })} />}
             {activeTab === "events" && <EventsEditor data={data} onSave={(v) => handleSave("Etkinlikler", { events: v })} />}
-            {activeTab === "projects" && <ProjectsEditor data={data} onSave={(v) => handleSave("Projeler", { projects: v })} />}
-            {activeTab === "contact" && <ContactEditor data={data} onSave={(v) => handleSave("İletişim", { contact: v })} />}
-            {activeTab === "export" && <ExportPanel onExport={exportData} />}
+            { activeTab === "projects" && <ProjectsEditor data={data} onSave={(v) => handleSave("Projeler", { projects: v })} />}
+            { activeTab === "contact" && <ContactEditor data={data} onSave={(v) => handleSave("İletişim", { contact: v })} />}
+            { activeTab === "seo" && <SEOEditor data={data} onSave={(v) => handleSave("SEO", { seo: v })} />}
+            { activeTab === "colors" && <CategoryColorEditor data={data} onSave={(v) => handleSave("Renkler", { categoryColors: v })} />}
+            { activeTab === "export" && <ExportPanel onExport={exportData} />}
           </div>
         </div>
       </div>
@@ -517,6 +521,78 @@ function ExportPanel({ onExport }: { onExport: () => void }) {
         Tüm verilerinizi JSON olarak indirip kod içerisinde (lib/siteData.ts) değiştirirseniz, sunucuda kalıcı olur.
       </p>
       <button onClick={onExport} className="px-6 py-2.5 rounded-xl bg-[#7C3AED] hover:bg-[#6D28D9] text-white text-sm font-medium transition-colors">Tüm Datayı JSON Olarak İndir</button>
+    </div>
+  );
+}
+
+// ─── SEO Editor ───
+function SEOEditor({ data, onSave }: { data: SiteData; onSave: (v: SiteData["seo"]) => void }) {
+  const [seo, setSeo] = useState(data.seo || {
+    homepage: { title: "", description: "", keywords: "" },
+    projects: { title: "", description: "", keywords: "" },
+    events: { title: "", description: "", keywords: "" }
+  });
+
+  const updateSEO = (page: keyof SiteData["seo"], key: string, val: string) => {
+    setSeo({ ...seo, [page]: { ...seo[page], [key]: val } });
+  };
+
+  return (
+    <div className="space-y-8">
+      <h2 className="text-xl font-bold text-white mb-2">Profesyonel SEO Ayarları</h2>
+      <p className="text-sm text-[#9090A8] mb-6">Google aramalarında (Örn: &quot;Enis Talha Sünetci&quot;) sitenizin nasıl görüneceğini buradan ayarlayın.</p>
+
+      {Object.entries(seo).map(([page, config]) => (
+        <div key={page} className="p-6 rounded-2xl bg-[#111118] border border-[#1E1E2A] space-y-4">
+          <h3 className="text-sm font-bold text-[#A78BFA] uppercase tracking-widest">{page === "homepage" ? "Ana Sayfa" : page === "projects" ? "Projeler Sayfası" : "Etkinlikler Sayfası"}</h3>
+          <Field label="Sayfa Başlığı (Title)" value={config.title} onChange={(v) => updateSEO(page as any, "title", v)} />
+          <TextArea label="Meta Açıklaması (Description)" value={config.description} onChange={(v) => updateSEO(page as any, "description", v)} />
+          <Field label="Anahtar Kelimeler (Keywords)" value={config.keywords} onChange={(v) => updateSEO(page as any, "keywords", v)} />
+        </div>
+      ))}
+
+      <button onClick={() => onSave(seo)} className="px-6 py-2.5 rounded-xl bg-[#7C3AED] hover:bg-[#6D28D9] text-white text-sm font-medium transition-colors w-full">SEO Ayarlarını Kaydet</button>
+    </div>
+  );
+}
+
+// ─── Category Color Editor ───
+function CategoryColorEditor({ data, onSave }: { data: SiteData; onSave: (v: SiteData["categoryColors"]) => void }) {
+  const [colors, setColors] = useState(data.categoryColors || {});
+  
+  // Get all unique categories from events and projects
+  const allCategories = Array.from(new Set([
+    ...(data.events?.map(e => e.category) || []),
+    ...(data.projects?.map(p => p.category) || [])
+  ])).filter(Boolean);
+
+  const updateColor = (cat: string, color: string) => {
+    setColors({ ...colors, [cat]: color });
+  };
+
+  return (
+    <div className="space-y-6">
+      <h2 className="text-xl font-bold text-white mb-2">Kategori Renk Yönetimi</h2>
+      <p className="text-sm text-[#9090A8] mb-6">Etkinlik ve projelerdeki &quot;Gezi, Diplomasi&quot; gibi etiketlerin renklerini buradan değiştirebilirsiniz.</p>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {allCategories.map(cat => (
+          <div key={cat} className="p-4 rounded-xl bg-[#111118] border border-[#1E1E2A] flex items-center justify-between">
+            <span className="text-sm text-white font-medium">{cat}</span>
+            <div className="flex items-center gap-3">
+              <input 
+                type="color" 
+                value={colors[cat] || "#7C3AED"} 
+                onChange={(e) => updateColor(cat, e.target.value)}
+                className="w-10 h-10 rounded-lg bg-transparent border-none cursor-pointer"
+              />
+              <span className="text-[10px] font-mono text-[#4A4A60] uppercase">{colors[cat] || "#7C3AED"}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <button onClick={() => onSave(colors)} className="px-6 py-2.5 rounded-xl bg-[#7C3AED] hover:bg-[#6D28D9] text-white text-sm font-medium transition-colors w-full mt-6">Renkleri Kaydet</button>
     </div>
   );
 }
