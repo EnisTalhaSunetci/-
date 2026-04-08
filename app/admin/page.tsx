@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { useSiteData, slugify, ExperienceItem, EventItem } from "@/lib/siteData";
+import { useSiteData, slugify } from "@/lib/siteData";
 import { DEFAULT_SITE_DATA } from "@/lib/defaultData";
-import type { SiteData } from "@/lib/siteData";
+import type { SiteData, ExperienceItem, EventItem, ProjectDetail } from "@/lib/defaultData";
 
 const ADMIN_PASSWORD = "enis2025";
 
@@ -150,7 +150,7 @@ function HeroEditor({ data, onSave }: { data: SiteData; onSave: (v: SiteData["he
       
       <div className="mt-8 pt-6 border-t border-[#1E1E2A]">
         <h3 className="text-lg font-bold text-white mb-4">3D Kaydırmalı Fotoğraflar (Slider)</h3>
-        <p className="text-sm text-[#9090A8] mb-4">Anasayfada sağ tarafta dönen büyük görseller ve yazılar. URL'leri /photos/xxxx.jpg şeklinde girebilirsin.</p>
+        <p className="text-sm text-[#9090A8] mb-4">Anasayfada sağ tarafta dönen büyük görseller ve yazılar. URL&apos;leri /photos/xxxx.jpg şeklinde girebilirsin.</p>
         
         <div className="space-y-6">
           {hero.slider.map((slide, i) => (
@@ -272,7 +272,7 @@ function ExperiencesEditor({ data, onSave }: { data: SiteData; onSave: (v: Exper
                   onChange={(e) => updateExp(i, "active", e.target.checked)}
                   className="w-5 h-5 rounded border-[#1E1E2A] text-[#7C3AED] focus:ring-[#7C3AED]"
                 />
-                <label className="text-sm text-[#9090A8] font-medium">Şu an Aktif (Timeline'da parlar)</label>
+                <label className="text-sm text-[#9090A8] font-medium">Şu an Aktif (Timeline&apos;da parlar)</label>
               </div>
               <ArrayField label="Etiketler" items={exp.tags || []} onChange={(v) => updateExp(i, "tags", v)} placeholder="Örn: SolidWorks, Koordinasyon..." />
             </div>
@@ -342,7 +342,6 @@ function EventsEditor({ data, onSave }: { data: SiteData; onSave: (v: EventItem[
 }
 
 // ─── Projects Editor ───
-import { ProjectDetail } from "@/lib/siteData";
 
 function ProjectsEditor({ data, onSave }: { data: SiteData; onSave: (v: ProjectDetail[]) => void }) {
   const [projects, setProjects] = useState<ProjectDetail[]>(data.projects || []);
@@ -411,13 +410,13 @@ function ProjectsEditor({ data, onSave }: { data: SiteData; onSave: (v: ProjectD
 function SkillsEditor({ data, onSave }: { data: SiteData; onSave: (v: SiteData["skills"]) => void }) {
   const [skills, setSkills] = useState(data.skills);
 
-  const updateGroup = (gi: number, key: string, val: any) => {
+  const updateGroup = (gi: number, key: string, val: string | { name: string; level: number }[]) => {
     const newGroups = [...skills.groups];
     newGroups[gi] = { ...newGroups[gi], [key]: val };
     setSkills({ ...skills, groups: newGroups });
   };
 
-  const updateSkill = (gi: number, si: number, key: string, val: any) => {
+  const updateSkill = (gi: number, si: number, key: "name" | "level", val: string | number) => {
     const newSkills = [...skills.groups[gi].skills];
     newSkills[si] = { ...newSkills[si], [key]: val };
     updateGroup(gi, "skills", newSkills);

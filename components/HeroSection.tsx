@@ -5,7 +5,9 @@ import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import Image from "next/image";
 import { DEFAULT_SITE_DATA, useSiteData } from "@/lib/siteData";
 
-const getSocialLinks = (d: any) => [
+import type { SiteData } from "@/lib/defaultData";
+
+const getSocialLinks = (d: SiteData) => [
   {
     label: "LinkedIn",
     href: d.contact.linkedin,
