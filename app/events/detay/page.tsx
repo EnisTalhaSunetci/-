@@ -3,10 +3,6 @@
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 import EventDetailClient from "@/components/EventDetailClient";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import MouseFollower from "@/components/MouseFollower";
-import RadarBackground from "@/components/RadarBackground";
 
 function EventDetailLoader() {
   const searchParams = useSearchParams();

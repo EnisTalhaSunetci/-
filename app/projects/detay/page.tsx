@@ -3,9 +3,6 @@
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 import ProjectDetailClient from "@/components/ProjectDetailClient";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import MouseFollower from "@/components/MouseFollower";
 
 function ProjectDetailLoader() {
   const searchParams = useSearchParams();

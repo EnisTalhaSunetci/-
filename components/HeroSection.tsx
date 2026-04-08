@@ -251,6 +251,7 @@ export default function HeroSection() {
 
 // ─── 3D Fold Carousel Slider ───
 
+/* eslint-disable-next-line @typescript-eslint/no-explicit-any */
 function HeroSlider({ rotateX, rotateY }: { rotateX: any; rotateY: any }) {
   const { data } = useSiteData();
   const SLIDER_DATA = data?.hero?.slider || [];
