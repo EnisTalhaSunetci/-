@@ -104,21 +104,21 @@ export const DEFAULT_SITE_DATA: SiteData = {
     "location": "Kocaeli / İstanbul, Türkiye",
     "slider": [
       {
-        "image": "/-/photos/media_1775556659498.jpg",
+        "image": "/photos/media_1775556659498.jpg",
         "title": "Yönetim Kurulu Bşk.",
         "desc": "Havacılık ve Uzay Zirvesi 2025",
         "tag1": "GTÜ HUK",
         "tag2": "Kocaeli / Gebze"
       },
       {
-        "image": "/-/photos/media_1775557207457.jpg",
+        "image": "/photos/media_1775557207457.jpg",
         "title": "Mekanik Ekip Üyesi",
         "desc": "Uluslararası İHA Yarışması 2024",
         "tag1": "TEKNOFEST Finali ",
         "tag2": "Kahramanmaraş / Türkoğlu"
       },
       {
-        "image": "/-/photos/media_1775556881581.jpeg",
+        "image": "/photos/media_1775556881581.jpeg",
         "title": "Üniversite Başkanı",
         "desc": "Türk Dünyası Gençlik Konseyi 2026",
         "tag1": "Resmi TDT Ziyareti",
@@ -173,8 +173,8 @@ export const DEFAULT_SITE_DATA: SiteData = {
       "Uçuş Sertifikası – Sivrihisar Havacılık Merkezi",
       "B Sınıfı Sürücü Belgesi – T.C. İçişleri Bakanlığı"
     ],
-    "photo1": "/-/photos/media_1775557304655.JPG",
-    "photo2": "/-/photos/media__1775395402232.jpg"
+    "photo1": "/photos/media_1775557304655.JPG",
+    "photo2": "/photos/media__1775395402232.jpg"
   },
   "experiences": [
     {
@@ -433,16 +433,16 @@ export const DEFAULT_SITE_DATA: SiteData = {
       "date": "2025",
       "category": "Diplomasi",
       "description": "Kıbrıs sorununa ilişkin güncel gelişmelerin ele alındığı program, Türk Dünyası Gençlik Vakfı tarafından gerçekleştirilmiştir. Programa, Kuzey Kıbrıs Türk Cumhuriyeti Meclis Başkanı ve Türkiye Cumhuriyeti Büyükelçisi katılım sağlamış; diplomasi, uluslararası ilişkiler ve bölgesel gelişmeler çok boyutlu şekilde değerlendirilmiştir.\n\nBen de Gebze Teknik Üniversitesi adına kulüp başkanı olarak programa katılım sağlayarak, Türk dünyası perspektifinde yürütülen bu önemli diplomatik ve entelektüel etkileşim sürecinin bir parçası oldum.",
-      "photo": "/-/photos/media_1775574986052.jpeg",
+      "photo": "/photos/media_1775574986052.jpeg",
       "slug": "yeni-etkinlik-1775574854095",
       "details": [],
       "achievements": [],
       "gallery": [
-        "/-/photos/media_1775574989734.jpeg",
-        "/-/photos/media_1775574994151.jpeg",
-        "/-/photos/media_1775574994151.jpeg",
-        "/-/photos/media_1775575003769.jpeg",
-        "/-/photos/media_1775575006272.jpeg"
+        "/photos/media_1775574989734.jpeg",
+        "/photos/media_1775574994151.jpeg",
+        "/photos/media_1775574994151.jpeg",
+        "/photos/media_1775575003769.jpeg",
+        "/photos/media_1775575006272.jpeg"
       ]
     },
     {
@@ -451,16 +451,16 @@ export const DEFAULT_SITE_DATA: SiteData = {
       "date": "2024",
       "category": "Ziyaret",
       "description": "TÜBİTAK UZAY’a gerçekleştirilen teknik ziyarette, Türkiye’nin uydu ve uzay teknolojileri alanındaki çalışmaları yerinde incelenmiştir. Ziyaret kapsamında yürütülen projeler, Ar-Ge süreçleri ve milli uzay vizyonu hakkında detaylı bilgiler edinilmiştir.\n\nBu süreçte, ileri teknoloji üretimi ve uzay ekosistemine dair stratejik bakış açımı geliştirme fırsatı buldum.",
-      "photo": "/-/photos/media_1775574193178.jpeg",
+      "photo": "/photos/media_1775574193178.jpeg",
       "slug": "yeni-etkinlik-1775572990466",
       "details": [],
       "achievements": [],
       "gallery": [
-        "/-/photos/media_1775574204026.jpeg",
-        "/-/photos/media_1775574207880.jpeg",
-        "/-/photos/media_1775574210908.jpeg",
-        "/-/photos/media_1775574215214.jpeg",
-        "/-/photos/media_1775574218589.jpeg"
+        "/photos/media_1775574204026.jpeg",
+        "/photos/media_1775574207880.jpeg",
+        "/photos/media_1775574210908.jpeg",
+        "/photos/media_1775574215214.jpeg",
+        "/photos/media_1775574218589.jpeg"
       ]
     },
     {
@@ -469,15 +469,15 @@ export const DEFAULT_SITE_DATA: SiteData = {
       "date": "2025",
       "category": "Ziyaret",
       "description": "2. Ana Jet Üs Komutanlığı’na gerçekleştirilen ziyarette, Türk Hava Kuvvetleri’nin operasyonel kabiliyetleri, hava savunma sistemleri ve üs yapısı hakkında yerinde bilgi edinilmiştir. Ziyaret kapsamında askeri havacılık faaliyetleri, görev süreçleri ve kullanılan platformlara dair teknik ve stratejik değerlendirmeler yapılmıştır.\n\nBu deneyim, savunma sanayii ve askeri havacılık alanına yönelik perspektifimi güçlendirmiştir.",
-      "photo": "/-/photos/media_1775574778055.jpeg",
+      "photo": "/photos/media_1775574778055.jpeg",
       "slug": "izmir-ana-jet",
       "details": [],
       "achievements": [],
       "gallery": [
-        "/-/photos/media_1775574763443.jpeg",
-        "/-/photos/media_1775574766622.jpeg",
-        "/-/photos/media_1775574770413.jpeg",
-        "/-/photos/media_1775574774608.jpeg"
+        "/photos/media_1775574763443.jpeg",
+        "/photos/media_1775574766622.jpeg",
+        "/photos/media_1775574770413.jpeg",
+        "/photos/media_1775574774608.jpeg"
       ]
     },
     {
@@ -485,7 +485,7 @@ export const DEFAULT_SITE_DATA: SiteData = {
       "org": "Gebze Teknik Üniversitesi",
       "date": "2025",
       "description": "YK Başkanı ve zirve genel koordinatörü olarak Türkiye'nin önde gelen havacılık ve uzay kurumlarının yöneticilerini, farklı üniversitelerden öğrenci kulüplerini bir araya getirdik. Astronot Tuva Cihangir Atasever, Aselsan Genel Müdür Yardımcısı, TÜBİTAK Uzay, TUSAŞ, Havelsan, Kale Jet, T.C. Savunma Sanayii Başkanlığı gibi kurum temsilcileri katıldı.",
-      "photo": "/-/photos/media_1775573060947.jpg",
+      "photo": "/photos/media_1775573060947.jpg",
       "category": "Zirve",
       "slug": "gtu-3-havacilik-ve-uzay-zirvesi",
       "details": [
@@ -497,14 +497,14 @@ export const DEFAULT_SITE_DATA: SiteData = {
         "Sektörün dev firmalarından üst düzey temsilciler"
       ],
       "gallery": [
-        "/-/photos/media__1775397425209.jpg",
-        "/-/photos/media_1775574250887.JPG",
-        "/-/photos/media_1775574262946.JPG",
-        "/-/photos/media_1775574265707.JPG",
-        "/-/photos/media_1775574268835.JPG",
-        "/-/photos/media_1775574275243.jpg",
-        "/-/photos/media_1775574293042.JPG",
-        "/-/photos/media_1775574300067.JPG"
+        "/photos/media__1775397425209.jpg",
+        "/photos/media_1775574250887.JPG",
+        "/photos/media_1775574262946.JPG",
+        "/photos/media_1775574265707.JPG",
+        "/photos/media_1775574268835.JPG",
+        "/photos/media_1775574275243.jpg",
+        "/photos/media_1775574293042.JPG",
+        "/photos/media_1775574300067.JPG"
       ]
     },
     {
@@ -512,7 +512,7 @@ export const DEFAULT_SITE_DATA: SiteData = {
       "org": "GTÜ Havacılık ve Uzay Kulübü",
       "date": "2025",
       "description": "YK Başkanı olarak sponsorlarımızın katılımıyla 10. yılımız için düzenlediğimiz etkinlikte, Gebze Belediye Başkanı ve değerli sponsorlarımızı ağırladık. Plaket takdiminin yanı sıra 10. yıl lansmanı ve tanıtım filmi gösterimi düzenlendi.",
-      "photo": "/-/photos/media_1775588082489.jpg",
+      "photo": "/photos/media_1775588082489.jpg",
       "category": "Etkinlik",
       "slug": "10-yil-lansmani-ve-plaket-toreni",
       "details": [
@@ -524,11 +524,11 @@ export const DEFAULT_SITE_DATA: SiteData = {
         "Sponsorlarla güçlü iletişim ve yeni destek fırsatları"
       ],
       "gallery": [
-        "/-/photos/media_1775573092373.JPG",
-        "/-/photos/media_1775573095876.JPG",
-        "/-/photos/media_1775573098768.JPG",
-        "/-/photos/media_1775573109451.JPG",
-        "/-/photos/media_1775573112226.JPG"
+        "/photos/media_1775573092373.JPG",
+        "/photos/media_1775573095876.JPG",
+        "/photos/media_1775573098768.JPG",
+        "/photos/media_1775573109451.JPG",
+        "/photos/media_1775573112226.JPG"
       ]
     },
     {
@@ -536,7 +536,7 @@ export const DEFAULT_SITE_DATA: SiteData = {
       "org": "GTÜ Havacılık ve Uzay Kulübü",
       "date": "2024",
       "description": "GTÜ Havacılık ve Uzay Kulübü olarak 7.'sini düzenlediğimiz Sivil Havacılık Günü etkinliğinde, Türkiye'nin ilk kadın kaptan pilotu Dilek Karabağlı ve SOLOTÜRK'ün kurucu pilotu Sedat Yalın Ahbab gibi değerli isimleri ağırladık.",
-      "photo": "/-/photos/media_1775573292192.JPG",
+      "photo": "/photos/media_1775573292192.JPG",
       "category": "Etkinlik",
       "slug": "sivil-havacilik-gunu-2024",
       "details": [
@@ -546,13 +546,13 @@ export const DEFAULT_SITE_DATA: SiteData = {
         "Türkiye'nin ilk kadın kaptan pilotunun katılımı"
       ],
       "gallery": [
-        "/-/photos/media_1775573128884.JPG",
-        "/-/photos/media_1775573133500.JPG",
-        "/-/photos/media_1775573137918.JPG",
-        "/-/photos/media_1775573155595.JPG",
-        "/-/photos/media_1775573167624.JPG",
-        "/-/photos/media_1775573271638.JPG",
-        "/-/photos/media_1775573281717.jpg"
+        "/photos/media_1775573128884.JPG",
+        "/photos/media_1775573133500.JPG",
+        "/photos/media_1775573137918.JPG",
+        "/photos/media_1775573155595.JPG",
+        "/photos/media_1775573167624.JPG",
+        "/photos/media_1775573271638.JPG",
+        "/photos/media_1775573281717.jpg"
       ]
     },
     {
@@ -560,7 +560,7 @@ export const DEFAULT_SITE_DATA: SiteData = {
       "org": "GTÜ Havacılık ve Uzay Kulübü",
       "date": "2022",
       "description": "TUA, TÜBİTAK Uzay, TÜBİTAK SAGE, DeltaV, Roketsan gibi firmaların ve üniversite roket/uydu takımlarının katıldığı Türkiye'nin en büyük roketçilik buluşması. İnsan Kaynakları Başkan Yardımcısı olarak organizasyonda aktif görev aldım.",
-      "photo": "/-/photos/media_1775573320662.jpg",
+      "photo": "/photos/media_1775573320662.jpg",
       "category": "Etkinlik",
       "slug": "uzay-gunleri-artemis",
       "details": [
@@ -571,7 +571,7 @@ export const DEFAULT_SITE_DATA: SiteData = {
         "Türkiye'nin en büyük roketçilik buluşması olarak tarihe geçti"
       ],
       "gallery": [
-        "/-/photos/media_1775573316095.jpg"
+        "/photos/media_1775573316095.jpg"
       ]
     },
     {
@@ -579,19 +579,19 @@ export const DEFAULT_SITE_DATA: SiteData = {
       "org": "TEKNOFEST ",
       "date": "2025",
       "description": "TEKNOFEST Havacılık, Uzay ve Teknoloji Festivali'ne katılarak yerli teknoloji ekosistemini ve savunma sanayii projelerini yerinde inceledim. Bitirme tezim kapsamında teknolojik atılımların Türkiye'nin yumuşak gücü ve marka imajı üzerindeki etkilerini gözlemledim. İlge AI bünyesindeki yapay zeka çözümlerimizin sektörel karşılığını analiz ederken, Türk Dünyası İHA Yarışması hazırlıkları kapsamında teknik ve stratejik ağ kurma süreçlerini yürüttüm.",
-      "photo": "/-/photos/media_1775574500346.jpeg",
+      "photo": "/photos/media_1775574500346.jpeg",
       "category": "Fuar",
       "slug": "teknofest-festival",
       "details": [],
       "achievements": [],
       "gallery": [
-        "/-/photos/media_1775574318755.jpeg",
-        "/-/photos/media_1775574324039.jpeg",
-        "/-/photos/media_1775574327858.jpeg",
-        "/-/photos/media_1775574333450.jpeg",
-        "/-/photos/media_1775574338266.jpeg",
-        "/-/photos/media_1775574341050.jpeg",
-        "/-/photos/media_1775574348494.jpeg"
+        "/photos/media_1775574318755.jpeg",
+        "/photos/media_1775574324039.jpeg",
+        "/photos/media_1775574327858.jpeg",
+        "/photos/media_1775574333450.jpeg",
+        "/photos/media_1775574338266.jpeg",
+        "/photos/media_1775574341050.jpeg",
+        "/photos/media_1775574348494.jpeg"
       ]
     },
     {
@@ -599,15 +599,15 @@ export const DEFAULT_SITE_DATA: SiteData = {
       "org": "Türk Silahlı Kuvvetlerini Güçlendirme Vakfı ",
       "date": "2025",
       "description": "IDEF Uluslararası Savunma Sanayii Fuarı'na katılarak sektördeki en son teknolojik gelişmeleri ve yerli savunma sanayii ekosistemini yerinde inceledim. Bitirme tezim olan savunma sanayisinin yumuşak güç ve marka imajı üzerindeki etkileri kapsamında saha gözlemleri yaptım. İlge AI bünyesindeki yapay zeka ve görüntü işleme çözümlerimizin sektördeki yerini analiz ederek, savunma sanayisinde teknolojik diplomasi ve ağ kurma süreçlerine katkı sağladım.",
-      "photo": "/-/photos/media_1775574381586.jpeg",
+      "photo": "/photos/media_1775574381586.jpeg",
       "category": "Fuar",
       "slug": "idef-fuar",
       "details": [],
       "achievements": [],
       "gallery": [
-        "/-/photos/media_1775574388479.jpeg",
-        "/-/photos/media_1775574390596.jpeg",
-        "/-/photos/media_1775574395070.jpeg"
+        "/photos/media_1775574388479.jpeg",
+        "/photos/media_1775574390596.jpeg",
+        "/photos/media_1775574395070.jpeg"
       ]
     },
     {
@@ -615,7 +615,7 @@ export const DEFAULT_SITE_DATA: SiteData = {
       "org": "Türk Dünyası Gençlik Vakfı",
       "date": "2025",
       "description": "Türk Dünyası Gençlik Vakfı tarafından düzenlenen Ulusal Teşkilatlanma Kampı’na, Türkiye genelindeki üniversite başkanlarıyla birlikte katılım sağladım. Bir hafta süren kamp boyunca sosyal ve akademik faaliyetlerin yanı sıra, kurumlar arası etkileşimi güçlendiren çeşitli organizasyonlar gerçekleştirdik ve diplomatik temaslarda bulunduk.\n\nBu süreç, teşkilatlanma, liderlik ve çok yönlü koordinasyon becerilerimin gelişmesine önemli katkı sağladı.",
-      "photo": "/-/photos/media_1775574399983.jpeg",
+      "photo": "/photos/media_1775574399983.jpeg",
       "category": "Diplomasi",
       "slug": "tdt-ulusal-teskilatlanma-kampi",
       "details": [
@@ -625,15 +625,15 @@ export const DEFAULT_SITE_DATA: SiteData = {
         "Kurucu başkan sıfatıyla temsilcilik"
       ],
       "gallery": [
-        "/-/photos/media_1775574404022.jpeg",
-        "/-/photos/media_1775574405696.jpeg",
-        "/-/photos/media_1775574407386.jpeg",
-        "/-/photos/media_1775574409770.jpeg",
-        "/-/photos/media_1775574412092.jpeg",
-        "/-/photos/media_1775574414133.jpeg",
-        "/-/photos/media_1775574415886.jpeg",
-        "/-/photos/media_1775574417650.jpeg",
-        "/-/photos/media_1775574421121.jpeg"
+        "/photos/media_1775574404022.jpeg",
+        "/photos/media_1775574405696.jpeg",
+        "/photos/media_1775574407386.jpeg",
+        "/photos/media_1775574409770.jpeg",
+        "/photos/media_1775574412092.jpeg",
+        "/photos/media_1775574414133.jpeg",
+        "/photos/media_1775574415886.jpeg",
+        "/photos/media_1775574417650.jpeg",
+        "/photos/media_1775574421121.jpeg"
       ]
     },
     {
@@ -641,7 +641,7 @@ export const DEFAULT_SITE_DATA: SiteData = {
       "org": "Maltepe İlçe Kızılay Başkanlığı",
       "date": "2023-2024",
       "description": "Maltepe İlçe Kızılay Başkanlığı gönüllü staj sürem içerisinde sosyal sorumluluk projelerinde ve yardım organizasyonlarında destek ve saha çalışmalarıgerçekleştirdim Takım çalışması ve kriz anlarında koordinasyon deneyimi kazandım.",
-      "photo": "/-/photos/media_1775588112026.jpeg",
+      "photo": "/photos/media_1775588112026.jpeg",
       "category": "Gönüllülük",
       "slug": "turk-kizilayi-gonulluluk",
       "details": [
@@ -651,9 +651,9 @@ export const DEFAULT_SITE_DATA: SiteData = {
         "Aktif gönüllü saati ve kriz yönetimi tecrübesi"
       ],
       "gallery": [
-        "/-/photos/media_1775588117254.jpeg",
-        "/-/photos/media_1775588121200.jpeg",
-        "/-/photos/media_1775588125842.jpeg"
+        "/photos/media_1775588117254.jpeg",
+        "/photos/media_1775588121200.jpeg",
+        "/photos/media_1775588125842.jpeg"
       ]
     },
     {
@@ -661,7 +661,7 @@ export const DEFAULT_SITE_DATA: SiteData = {
       "org": "Savunma & Teknoloji",
       "date": "2022, 2024",
       "description": "SAHA EXPO Savunma, Havacılık ve Uzay Sanayi Fuarı’na katılım sağlayarak, savunma sanayii alanındaki yerli ve milli teknolojileri yakından inceleme fırsatı buldum. Fuar kapsamında sektörün önde gelen firmalarıyla temas kurarak, güncel projeler, yenilikçi çözümler ve iş birliği imkanları hakkında bilgi edindim.\n\nBu deneyim, savunma ve havacılık ekosistemine dair vizyonumu genişletirken, sektörle doğrudan etkileşim kurma fırsatı sundu.",
-      "photo": "/-/photos/media_1775588134464.jpeg",
+      "photo": "/photos/media_1775588134464.jpeg",
       "category": "Fuar",
       "slug": "sahaexpo-savunma-fuari",
       "details": [
@@ -671,9 +671,9 @@ export const DEFAULT_SITE_DATA: SiteData = {
         "Kurum için yeni tedarikçiler ve destekçiler kazanılması"
       ],
       "gallery": [
-        "/-/photos/media_1775588139728.jpeg",
-        "/-/photos/media_1775588145652.jpeg",
-        "/-/photos/media_1775588152411.jpeg"
+        "/photos/media_1775588139728.jpeg",
+        "/photos/media_1775588145652.jpeg",
+        "/photos/media_1775588152411.jpeg"
       ]
     },
     {
@@ -681,13 +681,13 @@ export const DEFAULT_SITE_DATA: SiteData = {
       "org": "GTÜ – HUK",
       "date": "2024",
       "description": "9. Ana Jet Üs Komutanlığı’na gerçekleştirilen ziyarette, Türk Hava Kuvvetleri’nin operasyonel yapısı, görev süreçleri ve hava savunma kabiliyetleri hakkında yerinde bilgi edinilmiştir. Üs bünyesinde yürütülen faaliyetler ve kullanılan platformlar üzerine teknik ve stratejik değerlendirmeler yapılmıştır.\n\nBu ziyaret, askeri havacılık ve savunma alanına yönelik bilgi birikimimi ve bakış açımı önemli ölçüde geliştirmiştir.",
-      "photo": "/-/photos/media_1775574739524.jpeg",
+      "photo": "/photos/media_1775574739524.jpeg",
       "category": "Proje",
       "slug": "balkesir-ana-jet",
       "details": [],
       "achievements": [],
       "gallery": [
-        "/-/photos/media_1775574744227.jpeg"
+        "/photos/media_1775574744227.jpeg"
       ]
     },
     {
@@ -695,13 +695,13 @@ export const DEFAULT_SITE_DATA: SiteData = {
       "org": "Akademik Program",
       "date": "2024",
       "description": "GTÜHUK İHA Eğitimleri kapsamında, Gebze Teknik Üniversitesi Uçak Mühendisliği hocaları tarafından verilen derslere katıldım. Eğitimler, insansız hava araçlarının tasarımı, kontrolü ve operasyonel kullanımı üzerine yoğun teknik bilgiler sunarken, uygulamalı çalışmalarla teorik bilgilerin pekiştirilmesini sağladı.\n\nBu program, İHA teknolojileri konusundaki yetkinliğimi artırmam ve alanın teknik detaylarını derinlemesine öğrenmem için önemli bir fırsat oldu.",
-      "photo": "/-/photos/media_1775588180955.jpeg",
+      "photo": "/photos/media_1775588180955.jpeg",
       "category": "Eğitim",
       "slug": "egitim-seminer",
       "details": [],
       "achievements": [],
       "gallery": [
-        "/-/photos/media_1775588174162.jpeg"
+        "/photos/media_1775588174162.jpeg"
       ]
     },
     {
@@ -709,7 +709,7 @@ export const DEFAULT_SITE_DATA: SiteData = {
       "org": "TÜBİTAK – Adana",
       "date": "2023",
       "description": "TUSAŞ – Türk Havacılık ve Uzay Sanayii ziyareti, benim koordinasyonumla organize edildi; süreç boyunca Ulaştırma ve Altyapı Bakan Yardımcısı bizlere eşlik ederek fabrikanın farklı bölümlerini detaylı şekilde tanıttı ve bilgilendirmelerde bulundu.\n\nZiyaret kapsamında TUSAŞ’ın insansız hava araçları, uçak platformları ve Ar-Ge projeleri yerinde incelendi; üretim hatları, test laboratuvarları ve geliştirme süreçleri yakından gözlemlendi. Bu organizasyon, hem sektörel bilgi edinmemi sağladı hem de bakanlık düzeyinde diplomatik temaslar kurmamı ve stratejik koordinasyon becerilerimi pekiştirmemi mümkün kıldı.",
-      "photo": "/-/photos/media_1775574446898.jpeg",
+      "photo": "/photos/media_1775574446898.jpeg",
       "category": "Ziyaret",
       "slug": "tusas-gezisi",
       "details": [],
@@ -718,11 +718,11 @@ export const DEFAULT_SITE_DATA: SiteData = {
         "Diplomasi"
       ],
       "gallery": [
-        "/-/photos/media_1775574453518.jpeg",
-        "/-/photos/media_1775574457860.jpeg",
-        "/-/photos/media_1775574463427.jpeg",
-        "/-/photos/media_1775588188583.jpeg",
-        "/-/photos/media_1775588192532.jpeg"
+        "/photos/media_1775574453518.jpeg",
+        "/photos/media_1775574457860.jpeg",
+        "/photos/media_1775574463427.jpeg",
+        "/photos/media_1775588188583.jpeg",
+        "/photos/media_1775588192532.jpeg"
       ]
     }
   ],
@@ -733,20 +733,20 @@ export const DEFAULT_SITE_DATA: SiteData = {
       "subtitle": "Zirve Genel Koordinatörü · 8-9 Mayıs 2025",
       "category": "Zirve",
       "period": "2023 – 2025",
-      "coverPhoto": "/-/photos/media__1775397425209.jpg",
+      "coverPhoto": "/photos/media__1775397425209.jpg",
       "gallery": [
-        "/-/photos/media__1775397425209.jpg",
-        "/-/photos/media__1775396695582.jpg",
-        "/-/photos/media_1775571751245.jpg",
-        "/-/photos/media_1775571762714.JPG",
-        "/-/photos/media_1775571769418.JPG",
-        "/-/photos/media_1775571778998.JPG",
-        "/-/photos/media_1775571786660.JPG",
-        "/-/photos/media_1775571800023.JPG",
-        "/-/photos/media_1775571824926.JPG",
-        "/-/photos/media_1775571837536.JPG",
-        "/-/photos/media_1775572006546.JPG",
-        "/-/photos/media_1775572042964.JPG"
+        "/photos/media__1775397425209.jpg",
+        "/photos/media__1775396695582.jpg",
+        "/photos/media_1775571751245.jpg",
+        "/photos/media_1775571762714.JPG",
+        "/photos/media_1775571769418.JPG",
+        "/photos/media_1775571778998.JPG",
+        "/photos/media_1775571786660.JPG",
+        "/photos/media_1775571800023.JPG",
+        "/photos/media_1775571824926.JPG",
+        "/photos/media_1775571837536.JPG",
+        "/photos/media_1775572006546.JPG",
+        "/photos/media_1775572042964.JPG"
       ],
       "description": [
         "GTÜ Havacılık ve Uzay Kulübü YK Başkanı ve zirve genel koordinatörü olarak Gebze Teknik Üniversitesi ev sahipliğinde; ülkemizin önde gelen havacılık ve uzay kurumlarının yöneticilerini aynı platformda bir araya getirdik."
@@ -772,22 +772,22 @@ export const DEFAULT_SITE_DATA: SiteData = {
       "subtitle": "GTÜ Havacılık ve Uzay Kulübü · 2025",
       "category": "Etkinlik",
       "period": "2025",
-      "coverPhoto": "/-/photos/media_1775571593720.jpg",
+      "coverPhoto": "/photos/media_1775571593720.jpg",
       "gallery": [
-        "/-/photos/media_1775571600695.JPG",
-        "/-/photos/media_1775571602528.JPG",
-        "/-/photos/media_1775571606471.JPG",
-        "/-/photos/media_1775571613831.JPG",
-        "/-/photos/media_1775571616779.JPG",
-        "/-/photos/media_1775571623538.JPG",
-        "/-/photos/media_1775571638603.jpg",
-        "/-/photos/media_1775571643900.JPG",
-        "/-/photos/media_1775571651787.JPG",
-        "/-/photos/media_1775571668171.JPG",
-        "/-/photos/media_1775571675956.JPG",
-        "/-/photos/media_1775571684579.JPG",
-        "/-/photos/media_1775571715424.JPG",
-        "/-/photos/media_1775571723374.JPG"
+        "/photos/media_1775571600695.JPG",
+        "/photos/media_1775571602528.JPG",
+        "/photos/media_1775571606471.JPG",
+        "/photos/media_1775571613831.JPG",
+        "/photos/media_1775571616779.JPG",
+        "/photos/media_1775571623538.JPG",
+        "/photos/media_1775571638603.jpg",
+        "/photos/media_1775571643900.JPG",
+        "/photos/media_1775571651787.JPG",
+        "/photos/media_1775571668171.JPG",
+        "/photos/media_1775571675956.JPG",
+        "/photos/media_1775571684579.JPG",
+        "/photos/media_1775571715424.JPG",
+        "/photos/media_1775571723374.JPG"
       ],
       "description": [
         "GTÜ Havacılık ve Uzay Kulübü YK Başkanı olarak sponsorlarımızın katılımıyla 10. yılımız için lansman düzenledik."
@@ -810,9 +810,9 @@ export const DEFAULT_SITE_DATA: SiteData = {
       "subtitle": "GTÜ İşletme Bölümü - 2025",
       "category": "Bilimsel",
       "period": "2026",
-      "coverPhoto": "/-/photos/media_1775571368848.jpg",
+      "coverPhoto": "/photos/media_1775571368848.jpg",
       "gallery": [
-        "/-/photos/media_1775571547611.jpg"
+        "/photos/media_1775571547611.jpg"
       ],
       "description": [
         "Lisans bitirme çalışmamda, Türkiye özelinde savunma sanayisinin yumuşak güç ve ülke marka imajı üzerindeki stratejik etkilerini inceledim. Yerli savunma projelerinin teknolojik başarıları ve ihracat potansiyeli aracılığıyla Türkiye'nin uluslararası arenadaki algısını ve diplomatik nüfuzunu nasıl dönüştürdüğünü analiz ettim. Özellikle İHA/SİHA teknolojileri ve deniz platformları gibi somut başarıların, \"Türk Malı\" algısını küresel bir teknoloji markasına dönüştürme sürecini ve bunun kamu diplomasisindeki rolünü ele aldım."
@@ -832,7 +832,7 @@ export const DEFAULT_SITE_DATA: SiteData = {
         "havacilik-uzay-zirvesi",
         "10-yil-lansmani"
       ],
-      "pdfUrl": "/-/photos/media_1775585908672.pdf"
+      "pdfUrl": "/photos/media_1775585908672.pdf"
     },
     {
       "slug": "teknofest-iha",
@@ -840,18 +840,18 @@ export const DEFAULT_SITE_DATA: SiteData = {
       "subtitle": "GTU-AQUA Takımı · 685 Takım Arası Final · 2024",
       "category": "Yarışma",
       "period": "2023 – 2024",
-      "coverPhoto": "/-/photos/media__1775396600557.jpg",
+      "coverPhoto": "/photos/media__1775396600557.jpg",
       "gallery": [
-        "/-/photos/media__1775396600557.jpg",
-        "/-/photos/media_1775570916491.jpg",
-        "/-/photos/media_1775570920725.JPG",
-        "/-/photos/media_1775570966841.jpg",
-        "/-/photos/media_1775570982649.jpg",
-        "/-/photos/media_1775570989982.JPG",
-        "/-/photos/media_1775571019583.JPG",
-        "/-/photos/media_1775571026010.JPG",
-        "/-/photos/media_1775571028917.JPG",
-        "/-/photos/media_1775571036259.JPG"
+        "/photos/media__1775396600557.jpg",
+        "/photos/media_1775570916491.jpg",
+        "/photos/media_1775570920725.JPG",
+        "/photos/media_1775570966841.jpg",
+        "/photos/media_1775570982649.jpg",
+        "/photos/media_1775570989982.JPG",
+        "/photos/media_1775571019583.JPG",
+        "/photos/media_1775571026010.JPG",
+        "/photos/media_1775571028917.JPG",
+        "/photos/media_1775571036259.JPG"
       ],
       "description": [
         "TEKNOFEST Serbest Görev İHA Yarışması'nda GTU-AQUA İHA Takımı'nin mekanik ekip üyesi ve takım kaptanı olarak görev aldım.",
@@ -884,9 +884,9 @@ export const DEFAULT_SITE_DATA: SiteData = {
       "subtitle": "GTU-AVES Takımı · Uluslararası · 2022",
       "category": "Yarışma",
       "period": "2021 – 2022",
-      "coverPhoto": "/-/photos/media_1775570875513.webp",
+      "coverPhoto": "/photos/media_1775570875513.webp",
       "gallery": [
-        "/-/photos/media_1775570879455.webp"
+        "/photos/media_1775570879455.webp"
       ],
       "description": [
         "Amerika Birleşik Devletleri'nde düzenlenen SUAS (Student Unmanned Aerial Systems) yarışması sürecinde GTU-AVES İHA takımının sponsorluk and sosyal medya sorumlusu olarak rol aldım.",
@@ -914,11 +914,11 @@ export const DEFAULT_SITE_DATA: SiteData = {
       "subtitle": "Kurucu YK Başkanı & Koordinatör · 2025",
       "category": "Diplomasi & Teknoloji",
       "period": "2025 – Devam ediyor",
-      "coverPhoto": "/-/photos/media_1775570806123.jpeg",
+      "coverPhoto": "/photos/media_1775570806123.jpeg",
       "gallery": [
-        "/-/photos/media_1775570812695.jpeg",
-        "/-/photos/media_1775570816275.jpeg",
-        "/-/photos/media_1775570818489.jpeg"
+        "/photos/media_1775570812695.jpeg",
+        "/photos/media_1775570816275.jpeg",
+        "/photos/media_1775570818489.jpeg"
       ],
       "description": [
         "Türk Dünyası İHA Yarışması’nın koordinatörü olarak, Türk Devletleri Teşkilatı üyesi 8 ülkeden üniversite takımlarını bir araya getirmeyi hedefleyen uluslararası bir organizasyonu yönetiyorum. Bu girişim, yalnızca teknik bir yarışma olmanın ötesinde; Türk dünyası gençleri arasında kalıcı bağlar kurmayı, ortak üretim kültürünü güçlendirmeyi ve teknoloji odaklı iş birliğini derinleştirmeyi amaçlayan stratejik bir platform niteliği taşımaktadır.",
