@@ -234,6 +234,18 @@ function AboutEditor({ data, onSave }: { data: SiteData; onSave: (v: SiteData["a
 // ─── Experiences Editor ───
 function ExperiencesEditor({ data, onSave }: { data: SiteData; onSave: (v: ExperienceItem[]) => void }) {
   const [exps, setExps] = useState<ExperienceItem[]>(data.experiences || []);
+  const [draggedIdx, setDraggedIdx] = useState<number | null>(null);
+
+  const handleDrop = (e: React.DragEvent, index: number) => {
+    e.preventDefault();
+    if (draggedIdx === null || draggedIdx === index) return;
+    const items = [...exps];
+    const draggedItem = items[draggedIdx];
+    items.splice(draggedIdx, 1);
+    items.splice(index, 0, draggedItem);
+    setExps(items);
+    setDraggedIdx(null);
+  };
 
   const addExp = () => {
     setExps([{ org: "Yeni Kurum", role: "Yeni Rol", period: "2025", type: "İş Deneyimi", description: "", tags: [], active: true }, ...exps]);
@@ -258,9 +270,17 @@ function ExperiencesEditor({ data, onSave }: { data: SiteData; onSave: (v: Exper
 
       <div className="space-y-8">
         {exps.map((exp, i) => (
-          <div key={i} className="p-5 rounded-2xl bg-[#111118] border border-[#1E1E2A] relative">
+          <div 
+            key={i} 
+            draggable
+            onDragStart={() => setDraggedIdx(i)}
+            onDragOver={(e) => e.preventDefault()}
+            onDrop={(e) => handleDrop(e, i)}
+            className={`p-5 rounded-2xl bg-[#111118] border border-[#1E1E2A] relative transition-all ${draggedIdx === i ? "opacity-50 border-[#7C3AED]" : "cursor-grab"}`}
+          >
+            <div className="absolute top-4 left-4 text-[#4A4A60]">☰</div>
             <button onClick={() => removeExp(i)} className="absolute top-4 right-4 text-red-500 hover:text-red-400 text-xs">Sil</button>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 mt-6">
               <Field label="Kurum" value={exp.org} onChange={(v) => updateExp(i, "org", v)} />
               <Field label="Rol" value={exp.role} onChange={(v) => updateExp(i, "role", v)} />
               <Field label="Dönem" value={exp.period} onChange={(v) => updateExp(i, "period", v)} />
@@ -290,6 +310,18 @@ function ExperiencesEditor({ data, onSave }: { data: SiteData; onSave: (v: Exper
 // ─── Events Editor ───
 function EventsEditor({ data, onSave }: { data: SiteData; onSave: (v: EventItem[]) => void }) {
   const [events, setEvents] = useState<EventItem[]>(data.events || []);
+  const [draggedIdx, setDraggedIdx] = useState<number | null>(null);
+
+  const handleDrop = (e: React.DragEvent, index: number) => {
+    e.preventDefault();
+    if (draggedIdx === null || draggedIdx === index) return;
+    const items = [...events];
+    const draggedItem = items[draggedIdx];
+    items.splice(draggedIdx, 1);
+    items.splice(index, 0, draggedItem);
+    setEvents(items);
+    setDraggedIdx(null);
+  };
 
   const addEvent = () => {
     setEvents([{
@@ -317,9 +349,17 @@ function EventsEditor({ data, onSave }: { data: SiteData; onSave: (v: EventItem[
 
       <div className="space-y-8">
         {events.map((ev, i) => (
-          <div key={i} className="p-5 rounded-2xl bg-[#111118] border border-[#1E1E2A] relative">
+          <div 
+            key={i} 
+            draggable
+            onDragStart={() => setDraggedIdx(i)}
+            onDragOver={(e) => e.preventDefault()}
+            onDrop={(e) => handleDrop(e, i)}
+            className={`p-5 rounded-2xl bg-[#111118] border border-[#1E1E2A] relative transition-all ${draggedIdx === i ? "opacity-50 border-[#7C3AED]" : "cursor-grab"}`}
+          >
+            <div className="absolute top-4 left-4 text-[#4A4A60]">☰</div>
             <button onClick={() => removeEvent(i)} className="absolute top-4 right-4 text-red-500 hover:text-red-400 text-xs">Sil</button>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 mt-6">
               <Field label="Başlık" value={ev.title} onChange={(v) => updateEvent(i, "title", v)} />
               <Field label="URL (Slug) - otomatik düzelir" value={ev.slug} onChange={(v) => updateEvent(i, "slug", slugify(v))} />
               <Field label="Tarih" value={ev.date} onChange={(v) => updateEvent(i, "date", v)} />
@@ -348,6 +388,18 @@ function EventsEditor({ data, onSave }: { data: SiteData; onSave: (v: EventItem[
 
 function ProjectsEditor({ data, onSave }: { data: SiteData; onSave: (v: ProjectDetail[]) => void }) {
   const [projects, setProjects] = useState<ProjectDetail[]>(data.projects || []);
+  const [draggedIdx, setDraggedIdx] = useState<number | null>(null);
+
+  const handleDrop = (e: React.DragEvent, index: number) => {
+    e.preventDefault();
+    if (draggedIdx === null || draggedIdx === index) return;
+    const items = [...projects];
+    const draggedItem = items[draggedIdx];
+    items.splice(draggedIdx, 1);
+    items.splice(index, 0, draggedItem);
+    setProjects(items);
+    setDraggedIdx(null);
+  };
 
   const addProject = () => {
     setProjects([{
@@ -376,7 +428,15 @@ function ProjectsEditor({ data, onSave }: { data: SiteData; onSave: (v: ProjectD
 
       <div className="space-y-8">
         {projects.map((proj, i) => (
-          <div key={i} className="p-5 rounded-2xl bg-[#111118] border border-[#1E1E2A] relative">
+          <div 
+            key={i} 
+            draggable
+            onDragStart={() => setDraggedIdx(i)}
+            onDragOver={(e) => e.preventDefault()}
+            onDrop={(e) => handleDrop(e, i)}
+            className={`p-5 rounded-2xl bg-[#111118] border border-[#1E1E2A] relative transition-all ${draggedIdx === i ? "opacity-50 border-[#7C3AED]" : "cursor-grab"}`}
+          >
+            <div className="absolute top-4 left-4 text-[#4A4A60]">☰</div>
             <button onClick={() => removeProject(i)} className="absolute top-4 right-4 text-red-500 hover:text-red-400 text-xs">Sil</button>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 mt-6">
               <Field label="Başlık" value={proj.title} onChange={(v) => updateProject(i, "title", v)} />

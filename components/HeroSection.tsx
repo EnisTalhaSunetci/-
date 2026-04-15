@@ -211,29 +211,13 @@ export default function HeroSection() {
 
         {/* Right - 3D Coverflow Slider */}
         <motion.div
-          className="relative hidden lg:flex justify-center items-center h-full w-full perspective-[1200px]"
+          className="relative flex justify-center items-center h-full w-full perspective-[1200px] mt-10 lg:mt-0"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.25, duration: 1 }}
         >
           <HeroSlider rotateX={rotateX} rotateY={rotateY} />
         </motion.div>
-
-        {/* Mobile simple view */}
-        <div className="relative mt-10 lg:hidden flex justify-center w-full aspect-[4/5] max-w-sm mx-auto rounded-3xl overflow-hidden shadow-2xl border border-white/10">
-            <Image
-              src="/photos/media__1775397459829.jpg"
-              alt="Enis Talha"
-              fill
-              className="object-cover brightness-110"
-              priority
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0F]/95 via-[#0A0A0F]/20 to-transparent" />
-            <div className="absolute bottom-6 left-6 right-6">
-              <h3 className="text-xl font-bold text-white mb-1 drop-shadow-lg" style={{ fontFamily: "'Bricolage Grotesque', sans-serif" }}>Yönetim Kurulu Bşk.</h3>
-              <p className="text-sm text-white font-bold drop-shadow-md">Teknoloji & Havacılık Vizyonu</p>
-            </div>
-        </div>
       </div>
 
       {/* Scroll cue */}
@@ -261,7 +245,7 @@ function HeroSlider({ rotateX, rotateY }: { rotateX: any; rotateY: any }) {
     if (SLIDER_DATA.length === 0) return;
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % SLIDER_DATA.length);
-    }, 6000);
+    }, 3500);
     return () => clearInterval(interval);
   }, [SLIDER_DATA.length]);
 

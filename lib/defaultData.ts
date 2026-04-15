@@ -434,9 +434,9 @@ export const DEFAULT_SITE_DATA: SiteData = {
   },
   "seo": {
     "homepage": {
-      "title": "Enis Talha Sünetci | AI Proje Koordinatörü & İHA Uzmanı",
-      "description": "Enis Talha Sünetci'nin kişisel portfolyosu. Havacılık, savunma sanayii ve yapay zeka alanındaki projeler, deneyimler ve etkinlikler.",
-      "keywords": "Enis Talha Sünetci, Havacılık, İHA, Yapay Zeka, GTÜ, Proje Koordinatörü"
+      "title": "Enis Talha Sünetci / Portfolyo",
+      "description": "Enis Talha Sünetci / Portfolyo",
+      "keywords": "Enis Talha Sünetci, Havacılık, İHA, Yapay Zeka, GTÜ, Portfolyo"
     },
     "projects": {
       "title": "Projelerimiz | Enis Talha Sünetci",

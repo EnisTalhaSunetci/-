@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Enis Talha Sünetci",
+  verification: {
+    google: "google89e93659cfa9dec3"
+  },
+  title: "Enis Talha Sünetci / Portfolyo",
   description:
-    "AI, havacılık ve savunma sanayii alanlarında faaliyet gösteren proje koordinatörü ve lider.",
+    "Enis Talha Sünetci / Portfolyo",
   keywords: ["Enis Talha Sünetci", "AI", "Havacılık", "Savunma", "TEKNOFEST", "Portfolyo"],
   authors: [{ name: "Enis Talha Sünetci" }],
   icons: {
@@ -13,8 +16,8 @@ export const metadata: Metadata = {
     apple: "/logo.png",
   },
   openGraph: {
-    title: "Enis Talha Sünetci",
-    description: "AI Proje Koordinatörü · İHA Mekanik Ekip Üyesi · Stratejik Düşünür",
+    title: "Enis Talha Sünetci / Portfolyo",
+    description: "Enis Talha Sünetci / Portfolyo",
     type: "website",
   },
 };
@@ -30,6 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap"
           rel="stylesheet"
         />
+        <meta name="google-site-verification" content="google89e93659cfa9dec3" />
       </head>
       <body className="bg-[#0A0A0F]">{children}</body>
     </html>
